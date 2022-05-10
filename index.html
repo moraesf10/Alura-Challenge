@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Decodificador de Texto</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+
+<body>
+	<div class="colunasDivEncDec">
+		<div class="divEncDec">
+			<h2>Digitar texto:</h2>
+				<textarea id="areaCripto" name="areaCripto" placeholder="Texto para criptografar/descriptografar:"></textarea>
+				<input type="button" onclick="cripto_decripto(false)" value="Criptografar"/>
+				<input type="button" onclick="cripto_decripto(true)" value="Descriptografar"/>
+		</div>
+		<div class="divEncDec">
+			<h2>Texto codificado:</h2>
+				<textarea id="resultadoTextarea" name="resultadoTextarea" placeholder="Texto já codificado:"></textarea>
+				<input type="button" onclick="copyToClip()" value="Copiar texto" />
+		</div>
+	</div>
+	<footer>
+		<div class="logo-alura">
+			<h1><img src="alura.png"></h1>
+			<p class="copyright">&copy; Felipe Moraes, Alura Challenges 2022</p>
+	</footer>
+</body>
+
+	<script src="js/index.js"></script>
+
+</html>
